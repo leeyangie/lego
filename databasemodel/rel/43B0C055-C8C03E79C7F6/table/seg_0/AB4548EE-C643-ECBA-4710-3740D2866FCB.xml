@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB4548EE-C643-ECBA-4710-3740D2866FCB" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="BOARD">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>BOARD</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BNO" id="F68E0F4C-A6EA-3B1C-8015-1FE223590677">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BNO</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="1500AFA7-5AFC-1A2C-21F8-23DD7BCE602A">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT" id="2A8C3BF6-E664-9FD8-F3A6-7927AB8BAF84">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>CONTENT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTHOR" id="C664DCD1-5547-A5EA-F352-A6BCC32DAD09">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>AUTHOR</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60468A61-5EE1-FCBF-6B26-AA7245C28661" referredColumn="D9AB3ED5-738B-33DA-BC59-FCC2AE5877D4"/>
+</associations>
+</Column>
+<Column name="VCNT" id="3700F57E-B713-2777-DD27-0258F75CB1FC">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>VCNT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESDATE" id="6B6DC578-DDE2-134A-680D-0F0D35034A8C">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>RESDATE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7AE43CD-4BDB-B95D-0F4F-FB81FACC2E23" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="BOARD_PK">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008365</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F68E0F4C-A6EA-3B1C-8015-1FE223590677"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B874938-4913-305B-CA1B-BB48C79A68EA" name="BOARDID">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:20:42 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C664DCD1-5547-A5EA-F352-A6BCC32DAD09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

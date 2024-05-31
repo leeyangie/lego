@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="190657E1-1985-E515-48B0-61E946F8B470" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="PRODUCT">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PRODUCT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCTID" id="64541458-1950-901E-3707-07A9E000DB77">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>PRODUCTID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="9E68AA62-BF1B-856C-D6F0-829C60163623">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="1CCB3F59-DC80-8DB4-370E-B3018958CDEE">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="D1742EC4-A63D-1185-6869-CF28099AEF53">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMAGEURL" id="C47BFB37-915B-E90C-89DE-A8088121B9D4">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>IMAGEURL</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F39E0049-AA2E-279B-ABF4-EC3AE86C3807" name="PK_PRODUCT">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PK_PRODUCT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64541458-1950-901E-3707-07A9E000DB77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92603D01-E875-D50A-5C1F-669C3F72B3A2" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="PK_PRODUCT">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PK_PRODUCT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64541458-1950-901E-3707-07A9E000DB77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

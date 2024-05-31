@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRODUCT" directorySegmentName="seg_0" id="190657E1-1985-E515-48B0-61E946F8B470">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<schemaObject>1213E546-7087-AB4C-D380-079E45DCE532</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>80B5FBCE-10F2-51E2-B12D-5320EB27C515</segment>
+<tableSpace>FA7DF27D-20C3-D88F-F2AA-94E49AF4577D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPTION" id="1CCB3F59-DC80-8DB4-370E-B3018958CDEE">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCTID" id="64541458-1950-901E-3707-07A9E000DB77">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="9E68AA62-BF1B-856C-D6F0-829C60163623">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IMAGEURL" id="C47BFB37-915B-E90C-89DE-A8088121B9D4">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRICE" id="D1742EC4-A63D-1185-6869-CF28099AEF53">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_PRODUCT" id="92603D01-E875-D50A-5C1F-669C3F72B3A2">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<schemaObject>1213E546-7087-AB4C-D380-079E45DCE532</schemaObject>
+<segment>B901F3F8-CE44-D2C6-4E15-BE4B226ED59D</segment>
+<tableSpace>FA7DF27D-20C3-D88F-F2AA-94E49AF4577D</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_PRODUCT" id="F39E0049-AA2E-279B-ABF4-EC3AE86C3807">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:07:26 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<segment>B901F3F8-CE44-D2C6-4E15-BE4B226ED59D</segment>
+<tableSpace>FA7DF27D-20C3-D88F-F2AA-94E49AF4577D</tableSpace>
+<existingIndex>92603D01-E875-D50A-5C1F-669C3F72B3A2</existingIndex>
+<indexSegment>B901F3F8-CE44-D2C6-4E15-BE4B226ED59D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

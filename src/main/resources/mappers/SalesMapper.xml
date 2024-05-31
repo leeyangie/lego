@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sales">
+
+	<!-- 총 거래수 -->
+	<select id="getTotalCount" resultType="int">
+		select COUNT(*) from sales
+	</select>
+
+	<!-- 관리자 판매 전체 목록 -->
+	<select id="getAllSalesList" resultType="com.lego.dto.Sales">
+		select * from sales	order by resdate desc
+	</select>	
+	
+	<!-- 관리자 판매 진행 상태별 목록 -->
+	<select id="getStSalesList" resultType="com.lego.dto.Sales">
+		select * from sales	where st=#{st} order by resdate desc
+	</select>
+
+	<!-- 관리자 배송 상태별 목록 -->
+	<select id="getDelstSalesList" resultType="com.lego.dto.Sales">
+		select * from sales	where delstatus=#{delstatus} order by resdate desc
+	</select>
+
+	<!-- 상품별 판매 목록 -->
+	<select id="getPnoSalesList" resultType="com.lego.dto.Sales">
+		select * from lego_sales	where productid=#{productid} order by resdate desc
+	</select>
+
+	<!-- 고객별 구매 목록 -->
+	<select id="getSalesList" resultType="com.lego.dto.Sales">
+		select * from lego_sales where id=#{id} 
+	</select>	
+	
+	<!-- 해당 구매 건별 구매 상세 내역 -->
+	<select id="getSales" resultType="com.lego.dto.Sales">
+		select * from lego_sales where sno=#{sno}
+	</select>
+	
+	<!-- 구매 처리 -->
+	<insert id="insSales" parameterType="com.lego.dto.Sales">
+		insert into lego_sales values (lego_sales_seq.NEXTVAL, #{productid}, #{amount}, #{tot},
+		#{id}, #{paymethod}, #{paynum}, #{address}, #{tel}, 
+		#{delcom, jdbcType=VARCHAR}, #{deltel, jdbcType=VARCHAR}, #{delno, jdbcType=VARCHAR}, #{delstatus, jdbcType=VARCHAR}, #{st, jdbcType=VARCHAR})
+	</insert>
+	
+	<!-- 배송지 변경 -->
+	<update id="upSales" parameterType="com.lego.dto.Sales">
+		update lego_sales set address=#{address}, tel=#{tel} where sno=#{sno}
+	</update>
+	
+	<!-- 배송처리 -->
+	<update id="upDelivery" parameterType="com.lego.dto.Sales">
+		update lego_sales set delcom=#{delcom}, deltel=#{deltel}, delstatus=#{delstatus}, st=#{st} where sno=#{sno}
+	</update>
+	
+	<!-- 거래완료 -->
+	<update id="completeDelivery" parameterType="com.lego.dto.Sales">
+		update lego_sales set delstatus=#{delstatus}, st=#{st} where sno=#{sno}
+	</update>
+	
+	<!-- 결제 취소 -->
+	<delete id="delSales">
+		delete from lego_sales where sno=#{sno}
+	</delete>
+
+</mapper>

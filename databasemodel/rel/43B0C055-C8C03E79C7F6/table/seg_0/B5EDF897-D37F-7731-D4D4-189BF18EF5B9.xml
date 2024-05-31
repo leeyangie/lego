@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5EDF897-D37F-7731-D4D4-189BF18EF5B9" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="LEGO_MEMBER">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>LEGO_MEMBER</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D9AB3ED5-738B-33DA-BC59-FCC2AE5877D4">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PW" id="86F1A1B2-D529-4704-EA1E-8708387186DB">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>PW</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="407D7E2D-0E2F-E471-AC4E-AA5243A549E4">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="F2506730-F6E9-174F-B35A-747AE0BEEF5A">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEL" id="236D6031-6F8E-F6E5-5068-EC79F40F8077">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>TEL</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS1" id="DF12AA0F-6E46-0409-168E-F48D16DDE9AC">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>ADDRESS1</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS2" id="2514DFFC-2518-6069-F2CE-E455B094D0AF">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>ADDRESS2</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTCODE" id="3EEBD16F-209B-BD01-09C4-29ACD2C78F61">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>POSTCODE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTH" id="76A7D981-2637-8C1B-0840-8E3643C327A0">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>BIRTH</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POINT" id="C16BD9F7-EE54-E170-AF0F-227B7536B721">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>POINT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGDATE" id="DF2A2ABE-D9B2-81E1-C2D9-85499A8582D9">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_MEMBER</sourceObjSchema>
+<sourceObjName>REGDATE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F6794E0-A73B-1E39-35E9-75014BD5192A" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="LEGO_MEMBER_PK">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008375</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9AB3ED5-738B-33DA-BC59-FCC2AE5877D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABE2D1D6-E556-5829-65C4-A6DBCA99B783" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="LEGO_INVENTORY">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>LEGO_INVENTORY</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INO" id="B378DB56-B95E-8EC8-47EE-EE5641CD7CB6">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_INVENTORY</sourceObjSchema>
+<sourceObjName>INO</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTID" id="88D64CC0-92EB-6FBA-DF19-ADEC2ECEA1AB">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_INVENTORY</sourceObjSchema>
+<sourceObjName>PRODUCTID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A63A4816-F76B-831C-551A-9136EAA8ECD3" referredColumn="64541458-1950-901E-3707-07A9E000DB77"/>
+</associations>
+</Column>
+<Column name="IPRICE" id="C9F06C85-DB2C-D4BA-3F39-495BA4679C0C">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_INVENTORY</sourceObjSchema>
+<sourceObjName>IPRICE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>1000</defaultValue>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OPRICE" id="6CF2330F-8AD8-B2F8-EB00-864F22E5DC39">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_INVENTORY</sourceObjSchema>
+<sourceObjName>OPRICE</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>1000</defaultValue>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="3319B409-2971-CD5C-6671-ECD88A055126">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_INVENTORY</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REMARK" id="3141C30C-6FE7-746B-B212-4008B9BBFAD2">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_INVENTORY</sourceObjSchema>
+<sourceObjName>REMARK</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92A19FC4-BF5E-9158-5B00-82CCCFEEC1DD" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="LEGO_INVENTORY_PK">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008382</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B378DB56-B95E-8EC8-47EE-EE5641CD7CB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0239E2DA-7CD4-0437-3114-40E9FFEA372B" name="SYS_C008383">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:05:45 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88D64CC0-92EB-6FBA-DF19-ADEC2ECEA1AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

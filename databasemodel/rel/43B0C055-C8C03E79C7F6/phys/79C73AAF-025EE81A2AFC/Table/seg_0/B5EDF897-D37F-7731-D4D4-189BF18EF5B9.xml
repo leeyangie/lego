@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="LEGO_MEMBER" directorySegmentName="seg_0" id="B5EDF897-D37F-7731-D4D4-189BF18EF5B9">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<schemaObject>1213E546-7087-AB4C-D380-079E45DCE532</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>80B5FBCE-10F2-51E2-B12D-5320EB27C515</segment>
+<tableSpace>FA7DF27D-20C3-D88F-F2AA-94E49AF4577D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TEL" id="236D6031-6F8E-F6E5-5068-EC79F40F8077">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS2" id="2514DFFC-2518-6069-F2CE-E455B094D0AF">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSTCODE" id="3EEBD16F-209B-BD01-09C4-29ACD2C78F61">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="407D7E2D-0E2F-E471-AC4E-AA5243A549E4">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BIRTH" id="76A7D981-2637-8C1B-0840-8E3643C327A0">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PW" id="86F1A1B2-D529-4704-EA1E-8708387186DB">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POINT" id="C16BD9F7-EE54-E170-AF0F-227B7536B721">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID" id="D9AB3ED5-738B-33DA-BC59-FCC2AE5877D4">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS1" id="DF12AA0F-6E46-0409-168E-F48D16DDE9AC">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGDATE" id="DF2A2ABE-D9B2-81E1-C2D9-85499A8582D9">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<defaultValue>sysdate</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="F2506730-F6E9-174F-B35A-747AE0BEEF5A">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="LEGO_MEMBER_PK" id="5F6794E0-A73B-1E39-35E9-75014BD5192A">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:06:11 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<schemaObject>1213E546-7087-AB4C-D380-079E45DCE532</schemaObject>
+<segment>B901F3F8-CE44-D2C6-4E15-BE4B226ED59D</segment>
+<tableSpace>FA7DF27D-20C3-D88F-F2AA-94E49AF4577D</tableSpace>
+<indexSegment>B901F3F8-CE44-D2C6-4E15-BE4B226ED59D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

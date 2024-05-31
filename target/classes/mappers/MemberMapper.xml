@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lego.mapper.MemberMapper">
+
+
+	<select id="getMemberList" resultType="com.lego.dto.Member">
+		select * from lego_member order by resdate desc
+	</select>	
+	<select id="getMember" resultType="com.lego.dto.Member">
+		SELECT * FROM lego_member WHERE id=#{id}
+	</select>
+	<select id="memberCount" resultType="int">
+		select count(*) from lego_member
+	</select>
+	<insert id="insMember" parameterType="com.lego.dto.Member">
+		insert into lego_member values (#{id}, #{pw}, #{name}, #{email}, #{tel}, 
+		#{address1}, #{address2}, #{postcode}, default, default)
+	</insert>
+	<update id="changePw">
+		update lego_member set pw=#{pw} where id=#{id}
+	</update>
+	<update id="changeInfo">
+		update lego_member set name=#{name}, email=#{email}, tel=#{tel}, 
+		addr1=#{address1}, addr2=#{address2}, postcode=#{postcode} where id=#{id}
+	</update>
+	<update id="changePoint">
+		update lego_member set point=point+#{point} where id=#{id}
+	</update>
+	<delete id="delMember">
+		delete from lego_member where id=#{id}
+	</delete>
+</mapper>

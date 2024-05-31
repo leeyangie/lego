@@ -1,0 +1,269 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D414337B-C74C-C0F2-8369-6DF630501484" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="LEGO_SALES">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>LEGO_SALES</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SNO" id="85BA8802-E124-EE54-3E49-C2FAB957BAA9">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>SNO</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PNO" id="B7F9E747-8D25-ACE8-4A34-687E3440D90C">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>PNO</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D404D7FF-F36D-9A9E-5CB2-8E40CA73D433" referredColumn="64541458-1950-901E-3707-07A9E000DB77"/>
+</associations>
+</Column>
+<Column name="AMOUNT" id="578B482B-4092-2447-EC39-037F28E7B9AE">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOT" id="26344442-DC6F-44D1-8049-7B20BDF31E69">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>TOT</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="9D1E2B97-0402-CE13-EB0E-99AC9E9E2E05">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29C411B4-A832-CA97-541C-B584797C6191" referredColumn="D9AB3ED5-738B-33DA-BC59-FCC2AE5877D4"/>
+</associations>
+</Column>
+<Column name="PAYMETHOD" id="EDAB1E3C-AAF9-155E-6816-E7B99F2021E9">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>PAYMETHOD</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYNUM" id="FF10A320-0F76-C65C-27E6-012F84DAF420">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>PAYNUM</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="3CC26816-E910-A191-F63D-5D0FB4BE207D">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEL" id="17A56CEF-2CD5-C98C-9C63-F276F14D973A">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>TEL</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELCOM" id="BAA181B2-2A4A-FDAB-08AD-38E74EB18ABD">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>DELCOM</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELTEL" id="4B23A209-BA6A-E5F4-8044-CA4E65DE3DC7">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>DELTEL</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELNO" id="7A332F4B-BCA9-B912-9C32-3BA417065BEF">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>DELNO</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELSTATUS" id="1923FFA8-9B96-F6CE-FF9A-5AFE08DA2D77">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>DELSTATUS</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST" id="87CAADC5-5EFF-C588-F4CD-E63FB68CD039">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>LEGO_SALES</sourceObjSchema>
+<sourceObjName>ST</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C401DEA9-83EA-707D-097B-22AEB4C06169" schemaObject="1213E546-7087-AB4C-D380-079E45DCE532" name="LEGO_SALES_PK">
+<sourceConnName>DBMS1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008376</sourceObjName>
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85BA8802-E124-EE54-3E49-C2FAB957BAA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73AD1215-FEF9-B58E-E587-A9F441882D97" name="FK_PRODUCTID">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7F9E747-8D25-ACE8-4A34-687E3440D90C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C80B43CF-0FE9-9A7C-76F7-74DDEE195653" name="SYS_C008377">
+<createdBy>user1</createdBy>
+<createdTime>2024-05-22 05:17:22 UTC</createdTime>
+<ownerDesignName>databasemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D1E2B97-0402-CE13-EB0E-99AC9E9E2E05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
