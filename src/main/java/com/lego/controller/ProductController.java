@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.lego.dto.Product;
+import com.lego.dto.ProductVO;
 import com.lego.mapper.ProductMapper;
 
 @Controller
@@ -143,7 +144,7 @@ public class ProductController {
 			@RequestParam("img3") MultipartFile img3, HttpServletRequest request,
 			HttpServletResponse response, Model model) {
 		
-		Product before = productService.getProduct(productid);
+		ProductVO before = productService.getProduct(productid);
 		
 		String uploadDir = request.getServletContext().getRealPath(uploadLoc);
 		File dir = new File(uploadDir);

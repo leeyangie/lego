@@ -41,7 +41,7 @@
 	
 	<!-- 구매 처리 -->
 	<insert id="insSales" parameterType="com.lego.dto.Sales">
-		insert into lego_sales values (lego_sales_seq.NEXTVAL, #{productid}, #{amount}, #{tot},
+		insert into lego_sales values (lego_sales_seq.NEXTVAL, #{productid, jdbcType=VARCHAR}, #{amount}, #{tot},
 		#{id}, #{paymethod}, #{paynum}, #{address}, #{tel}, 
 		#{delcom, jdbcType=VARCHAR}, #{deltel, jdbcType=VARCHAR}, #{delno, jdbcType=VARCHAR}, #{delstatus, jdbcType=VARCHAR}, #{st, jdbcType=VARCHAR})
 	</insert>

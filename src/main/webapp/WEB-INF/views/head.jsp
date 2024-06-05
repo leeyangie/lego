@@ -19,6 +19,10 @@
 <link rel="stylesheet" href="${path0}/resources/css/normalize.css" />
 <link rel="stylesheet" href="${path0}/resources/css/common.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+<link href="https://fonts.cdnfonts.com/css/optima" rel="stylesheet">
+
 <script src="${path0}/resources/js/jquery-3.7.1.js"></script>
 <script src="${path0}/resources/js/datatables.min.js"></script>
 <script src="${path0}/resources/js/parallax.js"></script>
+<script src="https://kit.fontawesome.com/1f3107a968.js" crossorigin="anonymous"></script>  

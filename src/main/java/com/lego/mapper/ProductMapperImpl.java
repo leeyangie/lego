@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.lego.dto.Product;
+import com.lego.dto.ProductVO;
 
 @Repository
 public class ProductMapperImpl implements ProductMapper{
@@ -20,17 +21,17 @@ public class ProductMapperImpl implements ProductMapper{
 	}
 
 	@Override
-	public List<Product> getProductList() {
+	public List<ProductVO> getProductList() {
 		return sqlSession.selectList("com.lego.mapper.ProductMapper.getProductList");
 	}
 
 	@Override
-	public List<Product> getProductCateList(String productcategory) {
+	public List<ProductVO> getProductCateList(String productcategory) {
 		return sqlSession.selectList("com.lego.mapper.ProductMapper.getProductCateList", productcategory);
 	}
 
 	@Override
-	public Product getProduct(String productid) {
+	public ProductVO getProduct(String productid) {
 		return sqlSession.selectOne("com.lego.mapper.ProductMapper.getProduct", productid);
 	}
 

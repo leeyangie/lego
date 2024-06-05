@@ -4,11 +4,12 @@
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
 <%@ page import="java.util.*, java.lang.*" %>
 <%@ page import="java.text.*, java.net.InetAddress" %>
+
 <c:set var="path1" value="${pageContext.request.contextPath }" />
 <!-- 헤더 내용 기술 -->
-    
+  
 <div id="header_wrap">
-<div id="sidemenu_bar"><i class="fa-solid fa-bars"></i></div>
+<div id="sidemenu_bar"><i class="fa-solid fa-bars" style="font-size:30px; "></i></div>
 <div id="logo_wrap"><a href="${path1 }/#"><img class="logoimg" alt="logo" src="${path1 }/resources/images/images.png"></a></div>
 	<nav id="gnb">
 	    <ul class="menu">

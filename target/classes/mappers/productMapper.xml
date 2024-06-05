@@ -11,18 +11,18 @@
 	</select>
 	
 	<!-- 상품 목록 -->
-	<select id="getProductList" resultType="com.lego.dto.Product">
-		select * from product order by productid desc
+	<select id="getProductList" resultType="com.lego.dto.ProductVO">
+		select * from productvo order by productid desc
 	</select>
 
 	<!-- 상품 목록 -->
-	<select id="getProductCateList" parameterType="String" resultType="com.lego.dto.Product">
-		select * from product where productcategory=#{productcategory} order by productid desc 
+	<select id="getProductCateList" parameterType="String" resultType="com.lego.dto.ProductVO">
+		select * from productvo where productcategory=#{productcategory} order by productid desc 
 	</select>
 	
 	<!-- 상품 상세 보기 -->	
-	<select id="getProduct" resultType="com.lego.dto.Product">
-		select * from product where productid=#{productid}
+	<select id="getProduct" resultType="com.lego.dto.ProductVO">
+		select * from productvo where productid=#{productid}
 	</select>
 	
 	<!-- 상품 등록 -->

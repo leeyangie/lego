@@ -120,9 +120,9 @@ public class MemberController {
 		return "redirect:/";
 	}
 	
-	@GetMapping("myInfo.do")
+	@GetMapping("mypage.do")
 	public String myInfo(Model model) {
-		return "member/myInfo";
+		return "member/mypage";
 	}
 	
 	@GetMapping("myUpdate.do")

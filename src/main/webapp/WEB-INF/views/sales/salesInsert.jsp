@@ -43,8 +43,17 @@
 									<th><h3>제품 정보</h3></th>
 									<td>
 										<div class="item_fr">
-											<input type="text" name="productid" id="productid" value="${product.productid }" readonly />
-											<input type="text" name="id" id="id" value="${cus.id }" readonly/>
+											<div class="item_fr">
+											<input type="hidden" name="productid" id="pno" value="${product.productid }" />
+											<input type="hidden" id="name" value="${cus.name }" />
+											<input type="hidden" id="pname" value="${product.productname }" />
+											<input type="hidden" name="id" id="id" value="${cus.id }" />
+											<input type="hidden" id="email" value="${cus.email }" />
+											<input type="hidden" id="custel" value="${cus.tel }" />
+											<input type="hidden" id="cusaddr" value="${cus.address1 }" />
+											<input type="hidden" id="cusaddr2" value="${cus.address2 }" />
+											<input type="hidden" id="cuspostcode" value="${cus.postcode }" />
+											<input type="hidden" name="gtid" id="gtid" />
 											<h4>제품명 : ${product.productname }</h4>
 											<img src="${path1 }/resources/upload/${product.img1 }" alt="${product.productname }" width="120" />
 											<br>
@@ -242,7 +251,22 @@
 						        	}
 						        	
 						        	//여기에 나머지 코딩
+						        	pay_num = card_name+" : "+card_number;
 						        	
+						        	var msg = "";
+						        	msg += "결제수단 : "+pay_method+"<br>";
+						        	msg += "결제번호 : "+pay_num+"<br>";
+						        	msg += "결제금액 : "+amount+"<br>";
+						        	msg += "거래 승인 번호 : "+gt_id+"<br>";
+						        	
+						        	$("#paymethod").val(pay_method);	
+						        	$("#paynum").val(pay_num);
+						        	$("#gtid").val(gt_id);
+						        	
+		                            $("#msg").html(msg);
+						            $(".result_item").css("display", "");
+		                            $("#salesBtn").css("display", "inline-block");
+		                            
 						        	
 					        	} else {
 					        		//결제가 실패되었을 경우
@@ -257,22 +281,7 @@
 					        		연습이므로 밖에 기술하였음
 					        	*/
 					        	
-					        	pay_num = card_name+" : "+card_number;
 					        	
-					        	var msg = "";
-					        	msg += "결제수단 : "+pay_method+"<br>";
-					        	msg += "결제번호 : "+pay_num+"<br>";
-					        	msg += "결제금액 : "+amount+"<br>";
-					        	msg += "거래 승인 번호 : "+gt_id+"<br>";
-					        	
-					        	$("#paymethod").val(pay_method);	
-					        	$("#paynum").val(pay_num);
-					        	$("#gtid").val(gt_id);
-					        	
-	                            $("#msg").html(msg);
-					            $(".result_item").css("display", "");
-	                            $("#salesBtn").css("display", "inline-block");
-	                            
 	                            
 					        });
 						});

@@ -68,6 +68,14 @@ font-family: "Bai Jamjuree", sans-serif;
 	min-width: 80px;
 }
 
+#sidemenu_bar { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	width: 60px;
+	display: none;
+}
+
 .logoimg {width: 100%}
 
 #gnb {
@@ -103,10 +111,11 @@ font-family: "Bai Jamjuree", sans-serif;
 	background-color:#170048;
 }
 
+
+
 @media (min-width: 769px) and (max-width: 985px) {
     #gnb {
 		width: 300px;
-		visibility: hidden;
 		min-width: 200px;
 	} 
 }
@@ -135,4 +144,6 @@ font-family: "Bai Jamjuree", sans-serif;
 		visibility: hidden;
 		min-width: 200px;
 	} 
+	#sidemenu_bar {
+		display: flex;
 }

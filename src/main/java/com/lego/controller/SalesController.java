@@ -1,5 +1,8 @@
 package com.lego.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -14,7 +17,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.lego.dto.IamPortClient;
 import com.lego.dto.Member;
+import com.lego.dto.ProductVO;
 import com.lego.dto.Sales;
+import com.lego.dto.SalesVO;
 import com.lego.mapper.InventoryMapper;
 import com.lego.mapper.ProductMapper;
 import com.lego.mapper.SalesMapper;
@@ -40,7 +45,38 @@ private static final Logger log = LoggerFactory.getLogger(SalesController.class)
 	@GetMapping("salesList.do")
 	public String getSalesList(Model model) {
 		String id = (String) session.getAttribute("sid");
-		model.addAttribute("list", salesService.getSalesList(id));
+		List<Sales> list = salesService.getSalesList(id);
+		List<SalesVO> list2 = new ArrayList<>();
+		for(Sales sales : list) {
+			SalesVO salesVO = new SalesVO();
+			salesVO.setAddress(sales.getAddress());
+			salesVO.setDelcom(sales.getDelcom());
+			salesVO.setDelno(sales.getDelno());
+			salesVO.setDelstatus(sales.getDelstatus());
+			salesVO.setDeltel(sales.getDeltel());
+			salesVO.setGtid(sales.getGtid());
+			salesVO.setPaymethod(sales.getPaymethod());
+			salesVO.setPaynum(sales.getPaynum());
+			salesVO.setResdate(sales.getResdate());
+			salesVO.setRname(sales.getRname());
+			salesVO.setSt(sales.getSt());
+			salesVO.setTel(sales.getTel());
+			salesVO.setProductid(sales.getProductid());
+			salesVO.setAmount(sales.getAmount());
+			salesVO.setSno(sales.getSno());
+			salesVO.setTot(sales.getTot());
+			
+			ProductVO pro = productService.getProduct(sales.getProductid());
+			salesVO.setProductname(pro.getProductname());
+			salesVO.setProductcategory(pro.getProductcategory());
+			salesVO.setDescription(pro.getDescription());
+			salesVO.setImg1(pro.getImg1());
+			salesVO.setImg2(pro.getImg2());
+			salesVO.setImg3(pro.getImg3());
+			
+			list2.add(salesVO);
+		}
+		model.addAttribute("list", list2);
 		return "sales/list";
 	}
 

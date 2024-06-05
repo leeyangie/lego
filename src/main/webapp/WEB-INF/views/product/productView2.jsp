@@ -13,45 +13,7 @@
 	<title>제품상세보기</title>
 	<jsp:include page="/WEB-INF/views/head.jsp"></jsp:include>
 	<style>
-	#page1 { 
-	position: relative;
-	height: 700px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 50px;
-	}
-	#page2 { 
-		height: 400px; 
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-bottom: 1px solid #252525;
-		border-top: 1px solid #252525;
-	}
-	.img_wrap { position : absolute;}
-	.back_text { 
-	font-family: 'Optima', sans-serif;
-	font-size: 160px;
-	color : #ffffe;
-	}
-	#img_wrap2 { 
-	width: 300px;
-	}
-	#img_wrap2 img { width: 100%;}
-	#page3 { height: 300px;}
-	#insider_wrap { 
-	height: 300px;'
-	background-image: url(${path1}/resources/images/product/lego_insider.png);
-	background-repeat: no-repeat;
-	background-size: 100% auto;}
-	.table { 
-		width: 500px;
-		height: 300px;
-		text-align: left;
-		font-size: 14px;
-	}
-	.table tbody th { width: 110px; text-align: left;}
+	.table { al}
 	</style>
 </head>
 <body>
@@ -69,17 +31,10 @@
 			  </ul>
 			</nav>
 	   	</div>
-	    <section class="page" id="page0">
+	    <section class="page" id="page1">
     		<div class="page-wrap">
  				<div class="clr-fix">
- 				
- 				<section class="page" id="page1">
- 					<div class="img_wrap"><img src="${path1}/resources/upload/${product.img1 }" alt="${product.productname }"/></div>
- 					<div class="back_text"><p>FANTASY</p></div>
- 				</section>
- 				<section class="page" id="page2">
- 					<div id="img_wrap2"><img src="${path1}/resources/upload/${product.img2 }" alt="${product.productname } 상품 설명 이미지"/></div>
-					<table id="tb1" class="table">
+					<table id="tb1" class="table" width="1200">
 						<tbody>
 							<tr>
 								<th>제품 번호</th>
@@ -88,7 +43,8 @@
 							<tr>
 								<th>상품 카테고리</th>
 								<td>
-									<p>${product.productcategory }
+									<p>
+										<strong title="${product.productcategory }">
 										<c:if test="${product.productcategory.equals('building')}">
 											건물
 										</c:if>
@@ -117,21 +73,18 @@
 								<td>${product.price }</td>
 							</tr>
 							<tr>
-								
+								<td colspan="2" class="img_wrap"><img src="${path1}/resources/upload/${product.img1 }" alt="${product.productname }"/></td>
 							</tr>
 							<tr>
 								<th>상품 설명</th>		
 								<td class="pre_wrap">${product.description }</td>
 							</tr>
+							<tr>
+								<td colspan="2" class="img_wrap"><img src="${path1}/resources/upload/${product.img2 }" alt="${product.productname } 상품 설명 이미지"/></td>
+							</tr>
 						</tbody>
 					</table>
-					</section>
-					<section class="page" id="page3">
-						<div id="insider_wrap">
-							<h2>LEGO® Insider가 되어주세요!</h2>
-							<p>회원 전용의 리워드와 흥미진진한 체험으로 가득한 새로운 세계로 들어오세요</p>
-						</div>
-					</section>
+					<hr>
 					<div class="buttons">
 					  <c:if test="${cus.id.equals('admin') }">					  
 						  <a href="${path1 }/admin/insertProduct.do" class="button is-danger">상품 등록</a>
